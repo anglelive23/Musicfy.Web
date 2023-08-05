@@ -110,6 +110,41 @@
     padding: 20px;
   }
 
+  .image-container {
+    position: relative;
+    display: inline-block; /* Ensures container size adjusts to the image size */
+  }
+
+  .text-overlay-header {
+    position: absolute;
+    bottom: 105px; /* Adjust top value to change the vertical position of the text */
+    left: 10px; /* Adjust left value to change the horizontal position of the text */
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    padding: 5px;
+    font-size: larger;
+  }
+
+  .image-overlay {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+
+  .text-overlay-desc {
+    position: absolute;
+    bottom: 4px;
+    left: 10px; 
+    color: white;
+    padding: 5px;
+    font-style:oblique;
+  }
+
+  .image {
+    width: 100%; 
+    height: auto;
+  }
+
   /* Styles for the Recently Played Section */
 .recently-played {
     padding: 40px 0;

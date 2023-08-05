@@ -1,7 +1,5 @@
-import { Observable } from 'rxjs';
 import { MusicService } from './../shared/services/music.service';
 import { Component, OnInit } from '@angular/core';
-import { ICategory } from '../shared/models/category';
 import { UrlEndPoints } from '../shared/constants/url-endpoints';
 
 @Component({
@@ -14,6 +12,7 @@ export class HomeComponent implements OnInit  {
   
   public imagesUrl: string = UrlEndPoints.apiRoot + `images/`;
   categories$ = this._musicService.categories$;
+  artists$ = this._musicService.artists$;
   
 
   ngOnInit(): void {

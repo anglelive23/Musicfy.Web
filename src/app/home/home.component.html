@@ -42,17 +42,20 @@
     </section>
 
     <!-- Featured Artists Section -->
-    <section class="featured-artists">
-        <div class="container">
+    <section class="featured-artists p-0">
+        <div class="container p-0">
             <h2 class="section-title">Featured Artists</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="artist-card">
-                        <!-- Add featured artist image -->
-                        <h3>Artist 1</h3>
+                <div *ngFor="let artist of artists$ | async" class="col-md-4">
+                    <div class="card image-container">
+                        <img title="{{ artist.image!.description }}" src="{{ this.imagesUrl+artist.image!.path }}"
+                            class="card-img-top image" alt="artist.image.description">
+                        <img *ngIf="artist.isVerfied" class="image-overlay" src="../../assets/images/verified.png" alt="verified"
+                            title="Verified Artist">
+                        <div class="text-overlay-header fs-3 fw-bold">{{artist.name}}</div>
+                        <div class="text-overlay-desc lh-sm">{{artist.brief}}</div>
                     </div>
                 </div>
-                <!-- Add more artist cards as needed -->
             </div>
         </div>
     </section>

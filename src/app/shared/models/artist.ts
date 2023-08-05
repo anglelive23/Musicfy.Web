@@ -10,4 +10,5 @@ export interface IArtist {
     imageId?: number;
     albums?: IAlbum[];
     songs?: any[];
+    isFeatured?: boolean;
 }
