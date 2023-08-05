@@ -1,0 +1,94 @@
+<div class="">
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Your Music</h1>
+            <p class="hero-subtitle">Explore millions of songs from your favorite artists.</p>
+            <a href="#" class="btn btn-primary btn-lg">Start Listening</a>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="container">
+            <h2 class="section-title">Explore music from these categories</h2>
+            <div class="row">
+                <div *ngFor="let category of categories$ | async" class="col-md-3">
+                    <div class="category-card">
+                        <a routerLink="" class="nonunderline">
+                            <img [title]="category.Image.Description" src="{{ this.imagesUrl+category.Image.Path }}"
+                                class="w-25" alt="category.Image.Description">
+                            <h3 class="mt-3">{{ category.Name }}</h3>
+                        </a>
+                        <p class="mt-3">{{category.Description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genres and Moods Section -->
+    <section class="genres-moods">
+        <div class="container">
+            <h2 class="section-title">Genres and Moods</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <!-- Add genre/mood image -->
+                        <h3>Genre 1</h3>
+                    </div>
+                </div>
+                <!-- Add more genre/mood cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Artists Section -->
+    <section class="featured-artists">
+        <div class="container">
+            <h2 class="section-title">Featured Artists</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="artist-card">
+                        <!-- Add featured artist image -->
+                        <h3>Artist 1</h3>
+                    </div>
+                </div>
+                <!-- Add more artist cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalized Recommendations Section -->
+    <section class="personalized">
+        <div class="container">
+            <h2 class="section-title">Personalized Recommendations</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="recommendation-card">
+                        <!-- Add personalized recommendation image -->
+                        <h3>Recommendation 1</h3>
+                    </div>
+                </div>
+                <!-- Add more personalized recommendation cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recently Played Section -->
+    <section class="recently-played">
+        <div class="container">
+            <h2 class="section-title">Recently Played</h2>
+            <div class="row">
+                <!-- Add recently played item cards dynamically here -->
+                <!-- Example card -->
+                <div class="col-md-4">
+                    <div class="recently-played-item">
+                        <img src="../../assets/images/icons8-music.svg" alt="Song 1">
+                        <h3>Song 1</h3>
+                        <p>Artist 1</p>
+                    </div>
+                </div>
+                <!-- Add more recently played item cards as needed -->
+            </div>
+        </div>
+    </section>
+</div>

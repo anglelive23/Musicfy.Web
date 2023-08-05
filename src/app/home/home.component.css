@@ -1,0 +1,156 @@
+.hero {
+    position: relative;
+    background-image: url('/assets/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Adjust the height as needed */
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  .explore {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .nonunderline {
+    text-decoration: none;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .category-card {
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    height: 300px;
+  }
+  
+  .category-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .category-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+
+  /* Styles for Genres and Moods, Featured Artists, and Personalized Recommendations sections */
+.genres-moods, .featured-artists, .personalized {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .genres-moods .section-title, .featured-artists .section-title, .personalized .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .genres-moods .row, .featured-artists .row, .personalized .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .genres-moods .category-card, .featured-artists .artist-card, .personalized .recommendation-card {
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+  }
+
+  /* Styles for the Recently Played Section */
+.recently-played {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+  }
+  
+  .recently-played .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .recently-played .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .recently-played-item {
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+  }
+  
+  .recently-played-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .recently-played-item h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .recently-played-item p {
+    color: #777;
+    margin: 0;
+  }
