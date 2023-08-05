@@ -1,12 +1,12 @@
 import { IArtist } from "./artist";
 
 export interface IAlbum {
-    Id: number;
-    Name: string;
-    Description?: string;
-    Artist?: IArtist;
-    ArtistId: number;
-    DateTime?: Date;
-    IsDeleted: boolean;
-    Songs?: any[]
+    id: number;
+    name: string;
+    description?: string;
+    artist?: IArtist;
+    artistId: number;
+    dateTime?: Date;
+    isDeleted: boolean;
+    songs?: any[]
 }

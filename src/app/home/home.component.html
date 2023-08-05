@@ -14,11 +14,11 @@
                 <div *ngFor="let category of categories$ | async" class="col-md-3">
                     <div class="category-card">
                         <a routerLink="" class="nonunderline">
-                            <img [title]="category.Image.Description" src="{{ this.imagesUrl+category.Image.Path }}"
+                            <img [title]="category.image.description" src="{{ this.imagesUrl+category.image.path }}"
                                 class="w-25" alt="category.Image.Description">
-                            <h3 class="mt-3">{{ category.Name }}</h3>
+                            <h3 class="mt-3">{{ category.name }}</h3>
                         </a>
-                        <p class="mt-3">{{category.Description}}</p>
+                        <p class="mt-3">{{category.description}}</p>
                     </div>
                 </div>
             </div>
