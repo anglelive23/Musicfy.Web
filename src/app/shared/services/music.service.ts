@@ -25,8 +25,8 @@ export class MusicService {
 
   // Artists
   private aristsUrl: string = 'api/odata/artists';
-  artists$ = this._http
-  .get<IArtist[]>(UrlEndPoints.apiRoot + this.aristsUrl + `?$expand=image`)
+  featuredArtists$ = this._http
+  .get<IArtist[]>(UrlEndPoints.apiRoot + this.aristsUrl + `?$expand=image&filter=isFeatured eq true`)
   .pipe(
     map((data: any) => {
       return data['value'] as IArtist[];

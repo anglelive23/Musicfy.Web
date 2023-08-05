@@ -10,8 +10,8 @@
     <section class="explore">
         <div class="container">
             <h2 class="section-title">Explore music from these categories</h2>
-            <div class="row">
-                <div *ngFor="let category of categories$ | async" class="col-md-3">
+            <owl-carousel-o [options]="carouselOptions">
+                <ng-template carouselSlide *ngFor="let category of categories$ | async" class="col-12 col-sm-6 col-md-4">
                     <div class="category-card">
                         <a routerLink="" class="nonunderline">
                             <img title="{{ category.image.description }}" src="{{ this.imagesUrl+category.image.path }}"
@@ -20,8 +20,8 @@
                         </a>
                         <p class="mt-3">{{ category.description }}</p>
                     </div>
-                </div>
-            </div>
+                </ng-template>
+                </owl-carousel-o>
         </div>
     </section>
 
@@ -46,7 +46,7 @@
         <div class="container p-0">
             <h2 class="section-title">Featured Artists</h2>
             <div class="row">
-                <div *ngFor="let artist of artists$ | async" class="col-md-4">
+                <div *ngFor="let artist of featuredArtists$ | async" class="col-md-4">
                     <div class="card image-container">
                         <img title="{{ artist.image!.description }}" src="{{ this.imagesUrl+artist.image!.path }}"
                             class="card-img-top image" alt="artist.image.description">
